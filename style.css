@@ -1,0 +1,172 @@
+/* ============================================
+   Reset básico - Seletor universal (opcional)
+   ============================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   Seletor por elemento HTML
+   ============================================ */
+body {
+  font-family: Georgia, "Times New Roman", serif; /* fonte 1 - nativa */
+  background-color: #f7f8fa;
+  color: #1f2430;
+  line-height: 1.7;
+}
+
+h1, h2 {
+  font-family: "Poppins", Arial, sans-serif; /* fonte 2 - externa (Google Fonts) */
+}
+
+a {
+  color: #1b2a4a;
+  text-decoration: none;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+header {
+  background-color: #1b2a4a;
+  color: #ffffff;
+  text-align: center;
+  padding: 48px 24px 36px;
+}
+
+header figure img {
+  border-radius: 50%;
+  border: 4px solid #e81e5e;
+  object-fit: cover;
+}
+
+header figcaption {
+  display: none;
+}
+
+section {
+  padding: 32px 24px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+section h2 {
+  color: #1b2a4a;
+  border-left: 4px solid #e81e5e;
+  padding-left: 12px;
+  margin-bottom: 14px;
+}
+
+section figure {
+  text-align: center;
+  margin: 8px 0 16px;
+}
+
+section figure img {
+  border-radius: 8px;
+}
+
+dt {
+  font-weight: bold; /* opção de estilo de fonte: negrito */
+  margin-top: 10px;
+}
+
+dd {
+  font-style: italic; /* opção de estilo de fonte: itálico */
+  color: #5b6472;
+  padding-left: 20px;
+}
+
+.material-icons-outlined {
+  vertical-align: middle;
+  margin-right: 6px;
+  color: #e81e5e;
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85em;
+  color: #5b6472;
+}
+
+section:nth-of-type(even) {
+  background-color: #eef0f4;
+}
+
+/* ============================================
+   Seletor por pseudo-classe
+   ============================================ */
+a:hover {
+  color: #e8871e; /* muda a cor do link ao passar o mouse */
+}
+
+/* ============================================
+   Seletor por ID
+   ============================================ */
+#nome {
+  font-size: 2.1em;
+  letter-spacing: 0.5px;
+  margin: 18px 0 6px;
+}
+
+#contato {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 18px;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+#contato li {
+  margin-bottom: 8px;
+  color: #c9d3e0;
+  font-size: 0.95em;
+}
+
+#contato a {
+  color: #ffffff;
+}
+
+/* ============================================
+   Seletor por classe
+   ============================================ */
+.destaque {
+  font-weight: bold;
+  text-decoration: underline; /* decoração de texto */
+  color: #1b2a4a;
+  font-size: 1.05em;
+}
+
+.tags {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags li {
+  background-color: #1b2a4a;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+/* ============================================
+   Seletor por atributo
+   ============================================ */
+a[target="_blank"] {
+  font-style: oblique; /* opção de estilo de fonte: oblíquo */
+}
